@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRUD</title>
+    <link rel="stylesheet" href="delete.css">
+</head>
+<body>
+    
+    <form action="delete.php" method="post">
+        <h2>User Management</h2>
+        <label for="deleteId">Enter User Phone to Delete:</label>
+        <input type="number" name="phone" required>
+        <button type="submit">Delete User</button>
+        <h3>Users:</h3>
+    <ul>
+        <?php include 'read.php'; ?>
+    </ul>
+    </form>
+
+    
+</body>
+</html>
