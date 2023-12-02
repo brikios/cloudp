@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["phone"])) {
-    $conn = new mysqli("localhost", "root", "", "project");
+    $conn = new mysqli("projectmouadh.database.windows.net", "brikios","med99210046@", "project");
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
