@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("projectmouadh-server", "zwowlyslug","43510T8LNY6Z3314$", "projectmouadh-database");
+$conn = new mysqli("projectmouadh-server.mysql.database.azure.com", "zwowlyslug","43510T8LNY6Z3314$", "projectmouadh-database");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
